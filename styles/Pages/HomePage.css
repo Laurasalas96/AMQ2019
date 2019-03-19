@@ -1,0 +1,199 @@
+@import url(http://fonts.googleapis.com/css?family=Kreon:400,700);
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+/* Custom page CSS
+-------------------------------------------------- */
+header h1 {
+    font-family: 'Pacifico', cursive;
+    vertical-align: middle;
+}
+
+header {
+    /*padding-top: 0px !important; !! fixer ceci!*/
+    background-image: url("../../assets/banner_homepage.jpg");
+    background-size: cover;
+    height: 550px;
+    color: #000000;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    header h1, header h2, header h3 a, header a, header a:hover {
+        color: #2e2e2e;
+        font-weight: 800;
+        text-decoration: none;
+    }
+
+    header h3 {
+        font-family: 'Kreon', serif;
+        background: #ffcc33;
+        padding: 10px;
+        border-radius: 3px;
+        font-size: 34px;
+        padding: 12px 10px 6px 10px;
+    }
+
+    header .dropdown-menu {
+        top: 74px;
+        background: #ffcc33;
+        border-width: 0;
+    }
+
+h1 {
+    font-size: 50px;
+}
+
+
+/* customize nav style */
+
+
+.divider {
+    height: 100px;
+}
+
+.panel {
+    border-width: 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 95px;
+    }
+}
+
+
+
+section {
+    color: #ffffff;
+    min-height: 400px;
+    height: auto !important;
+    height: 100%;
+    padding-top: 100px;
+}
+
+.bg-1 {
+    background: url('http://www.bootply.com/assets/example/bg_4.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bg-2 {
+    background: url('http://www.bootply.com/assets/example/bg_5.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bg-3 {
+    background: url('http://www.bootply.com/assets/example/bg_6.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bg-4 {
+    padding-top: 30px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(20,20,20,0.2)),to(rgba(255,255,255,0)), color-stop(1,#000));
+}
+
+.p0 {
+    height: 45em;
+    width: 100%;
+    background-color: #363636;
+}
+#myVideo {
+} /**/
+    /*position: absolute;*/
+    /*z-index: -1;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    margin: 0% 0% 0% -10%;
+    
+}
+#barre-droite h1{
+    float: right;
+
+}*/
+
+#titre-p1 h1{
+    text-align:center;
+    font-weight: bolder;
+    font-size: 3em;
+    font-family: Georgia;
+}
+texte-p1{
+
+}
+#texte-p1 p {
+    font-family: 'Times New Roman' !important;
+    font-style: italic;
+    margin-top: 10%;
+    padding: 0 10% 0 10%;
+}
+#poster {
+    float: right;
+    margin: 0px 0px 0px 30px;
+}
+
+#invites {
+    position: relative;
+    text-align: center;
+    
+}
+
+#horaires {
+    position: relative;
+    text-align: center;
+}
+#nous-joindre {
+    position: relative;
+    text-align: center;
+}
+
+#rond {
+    object-fit: cover;
+    object-position: 100% 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 100% 100% 100% 100%;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Times New Roman';
+    font-style: italic;
+}
+#rond:hover {
+    opacity: 0.7;
+}
+.centered:hover{
+    opacity: 100;
+    z-index: 3;
+}
+
+.bottom-label{
+  padding-top: 1em;
+  font-family: 'Times New Roman';
+  font-style: italic;
+  font-size: 1.2em;
+}
+.top-label {
+    padding-bottom: 1em;
+    font-family: Georgia;
+    font-weight: bolder;
+    font-size: 1.6em;
+}
+#p2 {
+    padding-top: 10em;
+}
+

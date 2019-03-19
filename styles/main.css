@@ -1,0 +1,94 @@
+
+
+
+/*********************************/
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.white { /*ceci donne la couleur blanche aux liens de la navbar*/
+    color: white !important;
+}
+
+.white:hover {
+    transition: 0.3s;
+    opacity: 0.8;
+}
+
+#navbar-space{
+    margin-left: 10em;
+}
+
+.navbar {
+    background-color: #EB5642; /* #00827a*/
+    opacity: 0.97;
+    filter: alpha(opacity=97); /* For IE8 and earlier */
+    box-shadow: 5px 1.5px 15px #4c4c4c;
+    border-color: #EB5642;
+}
+li {
+    font-family: Calibri;
+    font-weight: bold;
+}
+#navbar-space{
+    padding-top: 4%;
+}
+
+.page-standard{
+    width: 100%;
+    height: 45em;
+}
+
+.footer {
+    background-color: #363636;
+    box-shadow: inset 0px 0px 120px 10px #1b1b1b;
+    color: white;
+    font-family: Calibri;
+    font-weight: bold;
+
+}
+
+.footer-congress{
+   font-weight: 900;
+}
+
+#ftc-top{
+    margin-top: 1em;
+}
+
+#footer-list{
+    margin-top: 2em;
+    font-family: Calibri;
+    color: white;
+}
+#footer-list a{
+    color: white;
+    text-transform: uppercase;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+body {
+    padding-top: 40px;
+}
