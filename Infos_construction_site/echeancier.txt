@@ -1,0 +1,20 @@
+Fin de semaine qui s'en vient (22 mars): 
+	- Je vais finir la structure des pages web selon l'arbre que nous avons fait en reunion. Je vais mettre du texte Lorem Ipsum ainsi que des images generiques qui pourront par la suite etre remplaces par du vrai contenu selon chaque page. Ceci devrait pas prendre plus qu'une journee et demie a faire. 
+	- De votre cote: si vous pouviez commencer a chercher des images et des textes qui seront sur les pages, l'on pourra les ajouter. Je peux aussi aider avec la redaction du contenu pour pas que tout vous tombe dessus, et peut etre que vous pouvez demander de l'aide a des autres etudiants pour des idees du contenu. 
+
+Durant la semaine:
+	- Je vais chercher des infos sur le cout du hosting + le cout d'acheter un domain name
+
+Fin de semaine suivant (29 mars): 
+	- Finition des pages "statiques" (pas mal toutes les pages sauf celle de l'horaire personnalise)
+	- De mon cote: reajustement du site pour la version mobile / tablette. 
+	- [Idealement] Premiere version du site serait mise en ligne.
+
+Avril: 
+	- Travail sur l'horaire personnalise, peut etre le finir a la mi-avril?
+	- Ajout de nouvelles infos / reajustements 
+	
+ Mai: 
+	- Mise en ligne de l'horaire personnalise en debut mai (si toujours pas fini a la fin avril)
+	- Ajout des infos des conferenciers (j'imagine que d'ici la vous aurez plus d'infos) 
+-> idealement la structure du site serait a 100% finie et le site ne serait modifie que lorsque de nouvelles infos sont ajoutees.

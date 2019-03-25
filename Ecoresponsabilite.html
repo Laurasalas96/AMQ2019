@@ -1,8 +1,9 @@
 ﻿<!DOCTYPE html>
+
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Accueil | Congr�s AMQ 2019</title>
+    <title>Écoresponsabilité | Congrès AMQ 2019</title>
 
     <!--favicon-->
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
@@ -15,8 +16,8 @@
     <!--CSS General du site-->
     <link rel="stylesheet" href="styles/main.css" />
     <!--CSS de la page actuelle-->
-    <link rel="stylesheet" href="styles/Pages/Horaire.css" />
-
+    <link rel="stylesheet" href="styles/Pages/Ecoresponsabilite.css" /> 
+    
 
     <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
@@ -79,12 +80,63 @@
     </nav>
 
     <!--ACCUEIL & TEXTE DE BIENVENUE-->
-    <div class="page-standard">
-        <img id="horaireGen" src="assets/horaire_general.jpg" onclick="myFunction()" />
-        <a href="#">
-            <h3 id="telechargement">T�l�charger l'horaire</h3>
-        </a>
+    <div class="page-standard" id="Eco-p1">
+        <h1>Un congrès écoresponsable</h1>
+
+        <div class="col-md-12 col-s-12 " id="texte-p1">
+            <h3> Caractères et objectifs</h3>
+            <p id="txtEco">
+                Lorem ipsum dolor sit amet, ne paulo deserunt sed. Vel idque nonumes te, eros facer periculis et eam.
+                Usu et alia adhuc pertinacia, erant perfecto conclusionemque duo ex, mea ei etiam vocibus splendide.
+                At nec nobis gubergren sententiae, eius sanctus phaedrum his eu. At duo temporibus theophrastus.
+                <br />
+            </p>
+        </div>
+
+        <div class="col-md-12 col-s-12 " id="texte-p1">
+            <h3> Comment se préparer</h3>
+            <p id="txtEco">
+                Lorem ipsum dolor sit amet, ne paulo deserunt sed. Vel idque nonumes te, eros facer periculis et eam.
+                Usu et alia adhuc pertinacia, erant perfecto conclusionemque duo ex, mea ei etiam vocibus splendide.
+                At nec nobis gubergren sententiae, eius sanctus phaedrum his eu. At duo temporibus theophrastus.
+                <br />
+            </p>
+        </div>
+
+        <div class="col-md-12 col-s-12 " id="texte-p1">
+            <h3> Gestion des matières résiduelles</h3>
+            <p id="txtEco">
+                Lorem ipsum dolor sit amet, ne paulo deserunt sed. Vel idque nonumes te, eros facer periculis et eam.
+                Usu et alia adhuc pertinacia, erant perfecto conclusionemque duo ex, mea ei etiam vocibus splendide.
+                At nec nobis gubergren sententiae, eius sanctus phaedrum his eu. At duo temporibus theophrastus.
+                <br />
+            </p>
+        </div>
+        <div class="col-md-12 col-s-12 " id="texte-p1">
+            <h3> Service alimentaire</h3>
+            <p id="txtEco">
+                Lorem ipsum dolor sit amet, ne paulo deserunt sed. Vel idque nonumes te, eros facer periculis et eam.
+                Usu et alia adhuc pertinacia, erant perfecto conclusionemque duo ex, mea ei etiam vocibus splendide.
+                At nec nobis gubergren sententiae, eius sanctus phaedrum his eu. At duo temporibus theophrastus.
+                <br />
+
+            </p>
+        </div>
+
+        <div class="col-md-12 col-s-12 " id="texte-p1">
+            <h3> Communication verte</h3>
+            <p id="txtEco">
+                Lorem ipsum dolor sit amet, ne paulo deserunt sed. Vel idque nonumes te, eros facer periculis et eam.
+                Usu et alia adhuc pertinacia, erant perfecto conclusionemque duo ex, mea ei etiam vocibus splendide.
+                At nec nobis gubergren sententiae, eius sanctus phaedrum his eu. At duo temporibus theophrastus.
+                <br />
+            </p>
+        </div>
+
+        <br />
     </div>
+
+
 
     <div class="footer">
         <!-- Footer -->
@@ -96,7 +148,7 @@
                     <!-- Grid column -->
                     <div class="col-md-6 mt-md-0 mt-3">
                         <!-- Content -->
-                        <h1 class="footer-congress" id="ftc-top">CONGR�S</h1>
+                        <h1 class="footer-congress" id="ftc-top">CONGRÈS</h1>
                         <h1 class="footer-congress">AMQ 2019</h1>
                     </div>
                     <!-- Grid column -->
@@ -153,13 +205,24 @@
 
 
 
+
+    <!--= function () {
+    alert("button was clicked");-->
     <script>
-        function myFunction() {
-            return [document.getElementById("horaireGen").src = "assets/horaire_perso.jpg"];
+        var list_no = 0;
+        function myFunction(parameter) {
+            list_no = list_no + parameter;
+            if (list_no == -1) {
+                return [document.getElementById("nomInvite").innerHTML = "Michael Atiyah", document.getElementById("imgInvite").src = "assets/atiyah.jpg"];
+
+
+            }
+            else if (list_no != -1) {
+                return [document.getElementById("nomInvite").innerHTML = "Terence Tao", document.getElementById("imgInvite").src = "assets/tao.jpg"];;
+            }
         }
 
     </script>
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->

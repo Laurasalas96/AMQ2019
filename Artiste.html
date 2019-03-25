@@ -1,8 +1,9 @@
 ﻿<!DOCTYPE html>
+
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Accueil | Congr�s AMQ 2019</title>
+    <title>Accueil | Congrès AMQ 2019</title>
 
     <!--favicon-->
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
@@ -15,8 +16,8 @@
     <!--CSS General du site-->
     <link rel="stylesheet" href="styles/main.css" />
     <!--CSS de la page actuelle-->
-    <link rel="stylesheet" href="styles/Pages/Horaire.css" />
-
+    <link rel="stylesheet" href="styles/Pages/Artiste.css" />
+    
 
     <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
@@ -78,13 +79,45 @@
         </div><!-- /.container-fluid -->
     </nav>
 
+
     <!--ACCUEIL & TEXTE DE BIENVENUE-->
-    <div class="page-standard">
-        <img id="horaireGen" src="assets/horaire_general.jpg" onclick="myFunction()" />
-        <a href="#">
-            <h3 id="telechargement">T�l�charger l'horaire</h3>
-        </a>
+    <div class="page-standard" id="Artistes-p1">
+        <h1>Vernissage</h1>
+
+        <h3 id="nomArtiste">Étienne St-Amand</h3>
+        <div class="col-md-12 col-s-12 " id="texte-p1">
+            <p id="txtArtiste">
+                <img align="right" id="imgArtiste" src="assets/EtienneSaintAmant.jpg" />
+
+                Etienne Saint-Amant est maître en sciences et artiste professionnel en arts technologiques. Il se spécialise dans la conception d'oeuvres de grand format conçues et décrites dans un langage mathématique. Il est spécialiste, conférencier et pionnier dans ce domaine. Il est l'auteur de formules et d'équations qui se traduisent en divers outils de composition artistique. Il se dévoue à la recherche conceptuelle et à la création d'oeuvres d'art contemporaines.
+                <br />
+                <br />
+                Après plus de six années consacrées au développement des arts mathématiques, il présente sa première exposition en solo, Aleph, à Sherbrooke. Par la suite, les expositions solos et collectives se succèdent tant sur la scène canadienne qu'internationale. Il remporte plusieurs bourses, prix, distinctions et recommandations élogieuses.
+                <br />
+                <br />
+                Il représente le Canada, en arts visuels, à l'<a href="http://fr.wikipedia.org/wiki/Exposition_universelle_de_2010">exposition universelle de Shanghai</a> au Pavillon du Canada.
+                <br />
+                <br />
+                Comme membre du Laboratoire d'Imagerie de la Connectivité de Sherbrooke (<a href="http://scil.dinf.usherbrooke.ca/?lang=fr">SCIL</a>), il réalise une image médicale cérébrale de son réseau de matière blanche qu'il modifie mathématiquement et structurellement. Ses oeuvres <a href="https://chaoscopia.com/artworks/AutoportraitI.jpg">Autoportrait I</a> et <a href="https://chaoscopia.com/artworks/AutoportraitII.jpg">Autoportrait II</a> sont issues de cette démarche.
+                <br />
+                <br />
+                Il est cité parmi une courte liste d'artistes canadiens contemporains offrant le meilleur potentiel de revente dans l'article « Comment s'enrichir avec... l'art » de Sylvie Dugas, journal les Affaires du 9 et 16 juillet 2011.
+                <br />
+                <br />
+                On retrouve son travail dans plusieurs collections publiques, institutionnelles et privées. Il est l'artiste principal de projets d'intégration à l'architecture ; domaine d'expertise qu'il affectionne particulièrement et qu'il souhaite développer au cours des prochaines années.
+                <br />
+                <br />
+                Etienne Saint-Amant est un artiste originaire de Sherbrooke, Québec, Canada. Son atelier de création est actuellement à Orford, dans les Cantons-de-l'Est. Ses ateliers de production sont à Sherbrooke et Montréal.
+                <br />
+                <br />
+                Visitez le <a href="https://chaoscopia.com">site</a> d'Étienne Saint-Amant
+
+            </p>
+        </div>
+
     </div>
+
+
 
     <div class="footer">
         <!-- Footer -->
@@ -96,7 +129,7 @@
                     <!-- Grid column -->
                     <div class="col-md-6 mt-md-0 mt-3">
                         <!-- Content -->
-                        <h1 class="footer-congress" id="ftc-top">CONGR�S</h1>
+                        <h1 class="footer-congress" id="ftc-top">CONGRÈS</h1>
                         <h1 class="footer-congress">AMQ 2019</h1>
                     </div>
                     <!-- Grid column -->
@@ -153,13 +186,24 @@
 
 
 
+
+    <!--= function () {
+    alert("button was clicked");-->
     <script>
-        function myFunction() {
-            return [document.getElementById("horaireGen").src = "assets/horaire_perso.jpg"];
+        var list_no = 0;
+        function myFunction(parameter) {
+            list_no = list_no + parameter;
+            if (list_no == -1) {
+                return [document.getElementById("nomArtiste").innerHTML = "Michael Atiyah", document.getElementById("imgArtiste").src = "assets/atiyah.jpg"];
+
+
+            }
+            else if (list_no != -1) {
+                return [document.getElementById("nomArtiste").innerHTML = "Terence Tao", document.getElementById("imgArtiste").src = "assets/tao.jpg"];;
+            }
         }
 
     </script>
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->

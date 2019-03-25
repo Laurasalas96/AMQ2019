@@ -1,8 +1,9 @@
 ﻿<!DOCTYPE html>
+
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Accueil | Congr�s AMQ 2019</title>
+    <title>Accueil | Congrès AMQ 2019</title>
 
     <!--favicon-->
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
@@ -15,8 +16,8 @@
     <!--CSS General du site-->
     <link rel="stylesheet" href="styles/main.css" />
     <!--CSS de la page actuelle-->
-    <link rel="stylesheet" href="styles/Pages/Horaire.css" />
-
+    <link rel="stylesheet" href="styles/Pages/Comite.css" /> 
+    
 
     <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
@@ -78,13 +79,30 @@
         </div><!-- /.container-fluid -->
     </nav>
 
+
     <!--ACCUEIL & TEXTE DE BIENVENUE-->
-    <div class="page-standard">
-        <img id="horaireGen" src="assets/horaire_general.jpg" onclick="myFunction()" />
-        <a href="#">
-            <h3 id="telechargement">T�l�charger l'horaire</h3>
+    <div class="page-standard" id="Comite-p1">
+        <h1>Le comité organisateur</h1>
+        <div class="col-md-12 col-s-12 " id="texte-p1">
+            <p id="txtComite">
+                <img align="right" id="imgComite" src="assets/Réunion.jpg" />
+                Trois générations successives de professeur.e.s de mathématiques ont unis leurs forces dans le en se tournant résolument vers l’avenir :
+                François qui donna son premier cours à l’UQAM à Michel ; Michel qui était sur le jury de thèse de Cédric ; Cédric qui enseigna à Daniel
+                un cours gradué et à Stéphanie qui était étudiante au Vieux Montréal !
+                <br />
+                <br />
+                Quintet des temps modernes inspiré par les valeurs et/à l’esprit humanistes de notre cégep, nous sommes fiers  de nous situer à l’entrée de l’enseignement supérieur: transition entre des élèves de secondaire et de jeunes adultes, mandat de formation de citoyen.ne.s responsables et engagé.e.s dans la société.
+                <br /><br />
+                Un enthousiasme débordant nous caractérise, autant pour les mathématiques, que pour notre engagement envers nos étudiant.e.s, que dans l’organisation du colloque où vous viendrez nous rencontrez sans faute !
+
+            </p>
+        </div>
+
+
         </a>
     </div>
+
+
 
     <div class="footer">
         <!-- Footer -->
@@ -96,7 +114,7 @@
                     <!-- Grid column -->
                     <div class="col-md-6 mt-md-0 mt-3">
                         <!-- Content -->
-                        <h1 class="footer-congress" id="ftc-top">CONGR�S</h1>
+                        <h1 class="footer-congress" id="ftc-top">CONGRÈS</h1>
                         <h1 class="footer-congress">AMQ 2019</h1>
                     </div>
                     <!-- Grid column -->
@@ -153,13 +171,24 @@
 
 
 
+
+    <!--= function () {
+    alert("button was clicked");-->
     <script>
-        function myFunction() {
-            return [document.getElementById("horaireGen").src = "assets/horaire_perso.jpg"];
+        var list_no = 0;
+        function myFunction(parameter) {
+            list_no = list_no + parameter;
+            if (list_no == -1) {
+                return [document.getElementById("nomInvite").innerHTML = "Michael Atiyah", document.getElementById("imgInvite").src = "assets/atiyah.jpg"];
+
+
+            }
+            else if (list_no != -1) {
+                return [document.getElementById("nomInvite").innerHTML = "Terence Tao", document.getElementById("imgInvite").src = "assets/tao.jpg"];;
+            }
         }
 
     </script>
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
