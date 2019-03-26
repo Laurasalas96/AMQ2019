@@ -1,0 +1,32 @@
+#Pleniere {
+	list-style-type: circle;
+	margin: 0px 0px 0px 25px;
+}
+
+#Denis-p1{
+    margin-top: 70px;
+}
+
+
+#Denis-p1 h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3em;
+    font-family: Georgia;
+}
+
+#imgDenis {
+    object-fit: cover;
+    object-position: 100% 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 100% 100% 100% 100%;
+}
+
+.txtDenis{
+    padding: 15px 20px 15px 20px;
+    font-family: 'Times New Roman';
+    font-style: italic;
+   font-size: 1.1em;
+}
+
