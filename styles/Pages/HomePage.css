@@ -134,7 +134,8 @@ texte-p1{
 }
 #texte-p1 p {
     font-family: 'Times New Roman' !important;
-    font-style: italic;
+	font-size: 1.2em;
+    font-style: normal;
     margin-top: 10%;
     padding: 0 10% 0 10%;
 }
