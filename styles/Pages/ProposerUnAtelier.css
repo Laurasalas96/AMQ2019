@@ -1,8 +1,8 @@
-#Itineraire-p1{
+#Proposer-p1{
     margin-top: 70px;
 }
 
-#Itineraire-p1 h1 {
+#Proposer-p1 h1 {
     text-align: center;
     font-weight: bolder;
     font-size: 3em;
@@ -10,7 +10,7 @@
 }
 
 
-#Itineraire-p1 h3 {
+#Proposer-p1 h3 {
     padding: 15px 20px 15px 20px;
 	text-align: left;
     font-weight: bolder;
@@ -19,14 +19,14 @@
 }
 
 
-.page-itineraire {
+.page-proposer{
     width: 100%;
     height: 100em;
     margin-top: 5%;
     padding: 0 10% 0 10%;
 }
 
-#imgItineraire {
+#imgProposer {
     object-fit: cover;
     object-position: 50% 0;
     width: 200px;
@@ -34,7 +34,7 @@
     border-radius: 100% 100% 100% 100%;
 }
 
-.txtItineraire{
+#txtProposer{
     padding: 5px 20px 55px 20px;
     font-family: 'Times New Roman';
     font-style: normal;

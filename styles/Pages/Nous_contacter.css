@@ -1,0 +1,24 @@
+#Contact-p1{
+    margin-top: 70px;
+}
+
+#Contact-p1 h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3em;
+    font-family: Georgia;
+}
+
+#txtContact{
+    padding: 15px 20px 15px 20px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+   font-size: 1.1em;
+}
+
+.page-contact {
+    width: 100%;
+    height: 55em;
+    margin-top: 5%;
+    padding: 0 10% 0 10%;
+}
