@@ -1,0 +1,60 @@
+#Itineraire-p1{
+    margin-top: 70px;
+}
+
+#Itineraire-p1 h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3em;
+    font-family: Georgia;
+}
+
+
+#Itineraire-p1 h3 {
+    padding: 15px 20px 15px 20px;
+
+	text-align: left;
+    font-weight: bolder;
+    font-size: 1.4em;
+    font-family: Georgia;
+}
+
+
+.page-itineraire {
+    width: 100%;
+    height: 85em;
+    margin-top: 5%;
+    padding: 0 10% 0 10%;
+}
+
+#imgItineraire {
+    object-fit: cover;
+    object-position: 50% 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 100% 100% 100% 100%;
+}
+
+.txtItineraire{
+    padding: 5px 20px 35px 20px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+   font-size: 1.1em;
+}
+
+#imgSTM {
+    object-fit: cover;
+    object-position: 50% 0;
+    width: 300px;
+    height: 75px;
+    /*border-radius: 100% 100% 100% 100%;*/
+}
+
+#imgPlanStationsMetro {
+    object-fit: cover;
+    object-position: 50% 0;
+    width: 200px;
+    height: 200px;
+    /*border-radius: 100% 100% 100% 100%;*/
+}
+
