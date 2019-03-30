@@ -7,6 +7,16 @@
     margin-top: 70px;
 }
 
+
+
+.page-pleniere {
+    width: 100%;
+    height: 55em;
+    margin-top: 5%;
+    padding: 0 10% 0 10%;
+}
+
+
 ul.listePleniere{
 	/*margin-left : 100 px; */
 	 padding: 0px 0px 0px 25px;
