@@ -15,7 +15,7 @@ a:visited {
 }
 
 a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 a:active {
@@ -65,10 +65,9 @@ li {
 .footer {
     background-color: #363636;
     box-shadow: inset 0px 0px 120px 10px #1b1b1b;
-    color: white;
-    font-family: Calibri;
-    font-weight: bold;
-
+	color: white;
+	font-family: Calibri;
+	font-weight: bold;
 }
 
 .footer-congress{
@@ -76,29 +75,30 @@ li {
 }
 
 #ftc-top{
-    margin-top: 1em;
+	margin-top: 1em;
 }
 
 #footer-list{
-    margin-top: 2em;
-    font-family: Calibri;
-    color: white;
+	margin-top: 2em;
+	font-family: Calibri;
+	color: white;
 }
+
 #footer-list a{
-    color: white;
-    text-transform: uppercase;
+	color: white;
+	text-transform: uppercase;
 }
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
 body {
-    padding-top: 40px;
+	padding-top: 40px;
 }
 
 
 #eco_friendly:hover {
-    color: #006231 !important;
+	color: #006231 !important;
 }

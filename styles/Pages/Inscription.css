@@ -1,17 +1,17 @@
-#Inscription-p1{
-    margin-top: 70px;
+#page-inscription{
+	margin-top: 70px;
 }
 
-#Inscription-p1 h1 {
-    text-align: center;
-    font-weight: bolder;
-    font-size: 3em;
-    font-family: Georgia;
+#page-inscription h1 {
+	text-align: center;
+	font-weight: bolder;
+	font-size: 2.4em;
+	font-family: Georgia;
 }
 
 #txtInscription{
-    padding: 15px 20px 15px 20px;
-    font-family: 'Times New Roman';
-    font-style: normal;
-   font-size: 1.1em;
+	padding: 15px 20px 15px 20px;
+	font-family: 'Times New Roman';
+	font-style: normal;
+	font-size: 1.1em;
 }

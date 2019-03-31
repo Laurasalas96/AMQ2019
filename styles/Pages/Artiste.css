@@ -1,5 +1,9 @@
 #Artistes-p1{
     margin-top: 70px;
+	width: 100%;
+    height: 55em;
+    margin-top: 5%;
+    padding: 0 10% 0 10%;
 }
 
 #Artistes-p1 h1 {
@@ -9,12 +13,6 @@
     font-family: Georgia;
 }
 
-.page-artiste {
-    width: 100%;
-    height: 55em;
-    margin-top: 5%;
-    padding: 0 10% 0 10%;
-}
 
 #imgArtiste {
     object-fit: cover;
