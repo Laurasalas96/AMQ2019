@@ -1,0 +1,43 @@
+#Stationnement-p1{
+    margin-top: 70px;
+}
+
+#Stationnement-p1 h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3em;
+    font-family: Georgia;
+}
+
+.page-stationnement {
+    width: 100%;
+    height: 75em;
+    margin-top: 5%;
+    padding: 0 10% 0 10%;
+}
+
+
+#imgStationnement1 {
+    object-fit: cover;
+    object-position: 50% 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 100% 100% 100% 100%;
+}
+
+
+#imgStationnement2 {
+    object-fit: cover;
+    object-position: 50% 0;
+    width: 275px;
+    height: 200px;
+    /*border-radius: 100% 100% 100% 100%;*/
+}
+
+
+.txtStationnement{
+    padding: 15px 20px 15px 20px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+   font-size: 1.2em;
+}

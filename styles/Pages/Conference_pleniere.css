@@ -8,6 +8,21 @@
 }
 
 
+
+
+ul.listePleniere{
+	/*margin-left : 100 px; */
+	 padding: 0px 0px 0px 25px;
+	 font-size: 1.1em;
+	}
+
+ul.listePleniere li{
+    font-family: times; 
+    font-weight: normal;
+	margin-left :10px;
+	
+}
+
 #Denis-p1 h1 {
     text-align: center;
     font-weight: bolder;
@@ -26,7 +41,6 @@
 .txtDenis{
     padding: 15px 20px 15px 20px;
     font-family: 'Times New Roman';
-    font-style: italic;
    font-size: 1.1em;
 }
 

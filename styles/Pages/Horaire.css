@@ -6,6 +6,22 @@
     width: 50%;
     width: 1000px;
 }
+
+.page-horaire {
+    width: 100%;
+    height: 65em;
+    margin-top: 5%;
+    padding: 0 10% 0 10%;
+}
+
+.page-horaire h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3em;
+    font-family: Georgia;
+}
+
+
 #telechargement {
     text-align: center;
     font-weight: 400;
@@ -14,4 +30,100 @@
     font-family: 'Times New Roman';
     font-style: italic;
     margin: 15px 0px 15px 0px;
+}
+
+table {
+    border: 1px  #333;
+	text-align: center;
+}
+
+th{
+	text-align: center;
+	
+}
+
+td.atelier{
+	
+	background-color:#EAFA9C;
+	border: 2px solid #333;
+	text-align: center;
+	padding: 2px;
+}
+
+td.reunion{
+	
+	background-color:#FFDEFA;
+	border: 2px solid #333;
+	text-align: center;
+	padding: 2px;
+}
+
+td.pause{
+	
+	background-color:#FC90EB;
+	border: 2px solid #333;
+	text-align: center;
+	padding: 2px;
+}
+
+td.journee{
+	
+	background-color:#DFDFDF;
+	border: 2px solid #333;
+	text-align: center;
+	padding: 2px;
+}
+
+td.atelier{
+	
+	background-color:#EAFA9C;
+	border: 2px solid #333;
+	text-align: center;
+	padding: 2px;
+}
+
+td.reunion{
+	
+	background-color:#FFDEFA;
+	border: 2px solid #333;
+	text-align: center;
+	padding: 2px;
+}
+
+td.pause{
+	
+	background-color:#FC90EB;
+	border: 2px solid #333;
+	text-align: center;
+	padding: 2px;
+}
+
+td.social{
+	
+	background-color:#B3D1FF;
+	border: 2px solid #333;
+	text-align: center;
+	padding: 2px;
+}
+
+tr{
+	border-width : 1px;
+	border-color: gray;	
+}
+
+tr.heure{
+	border-color: black;	
+	border-Top:1pt solid black;
+	
+}
+
+tr.demiHeure{
+	border-color: black;	
+	border-top : 1pt dashed black;
+	
+}
+
+thead, tfoot {
+    background-color: #333;
+    color: #fff;
 }
