@@ -2,6 +2,11 @@
 
 
 /*********************************/
+#avenir {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /*Ceci change la couleur de selection*/
 ::selection {

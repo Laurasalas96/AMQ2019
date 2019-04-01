@@ -1,0 +1,17 @@
+h1 {
+    font-family: 'Comic Sans MS';
+    font-size: 2em;
+    color: deeppink;
+}
+
+p {
+    font-family: 'Times New Roman';
+    font-style: italic;
+}
+body {
+    text-align: center;
+}
+.testy 
+{
+    height: 45em;
+}
