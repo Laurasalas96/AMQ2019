@@ -1,5 +1,6 @@
 #page-proposer{
     margin-top: 70px;
+	height:75em;
 }
 
 #page-proposer h1 {
@@ -24,4 +25,42 @@
 	font-size: 1.1em;
 	margin-bottom: 20px;
 }
+* {
+  box-sizing: border-box;
+}
+
+td{
+	vertical-align:top;
+	padding: 3px 3px 3px 3px;
+	margin: 3px 3px 3px 3px;
+}
+
+
+input[type=text], select, textarea {
+  width: 300px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #EB5642;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+input[type=submit]:hover {
+  background-color: #CCCC;
+}
+
 

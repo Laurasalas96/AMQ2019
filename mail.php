@@ -78,68 +78,38 @@
     </nav>
 
 
-
-
    <div class="page-standard" id="page-proposer">
         <h1>Proposer un atelier</h1>
 		<div class="col-md-12 col-s-12" >
             <p id="txtProposer">
 			<br/>
 			<br/>
-			Vous pouvez proposer un atelier jusqu'au <font color=blue>15 août</font> en complétant le formulaire suivant.
-			
-			<form action="mail.php" method="POST">
-			
-			<table>
-			<tr>
-				<th width="150px"></th>
-				<th width="500px"></th>
-			</tr>
-			<tr>
-				<td><label for="prenom">Prénom : </label></td>
-				<td><input type="text" id="prenom" name="prenom" placeholder="Prénom"></td>
-			</tr>
-			<tr>
-				<td><label for="nom">Nom : </label></td>
-				<td><input type="text" id="nom" name="nom" placeholder="Nom"></td>
-			</tr>
-			<tr>
-				<td><label for="institution">Institution : </label></td>
-				<td><input type="text" id="institution" name="institution" placeholder="Institution"></td>
-			</tr>
-			<tr>
-				<td><label for="departement">Département : </label></td>
-				<td><input type="text" id="departement" name="departement" placeholder="Département"></td>
-			</tr>
-			<tr>
-				<td><label for="courriel">Courriel : </label></td>
-				<td><input type="text" id="courriel" name="courriel" placeholder="Courriel"></td>
-			</tr>
-			<tr>
-				<td><label for="presentation">Courriel : </label></td>
-				<td><select id="presentation" name="presentation">
-					<option value="long">Présentation (1h)</option>
-					<option value="moyen">Atelier (30 min.)</option>
-					<option value="court">Atelier court (15 min.)</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td><label for="resume">Résumé: </label></td>
-				<td><textarea name="resume" rows="6" cols="45" placeholder="Résumé"></textarea></td>
-			</tr>
-			<tr>
-				<td><label for="besoins">Besoins particuliers: (autre que projecteur ou tableau) </label></td>
-				<td><textarea name="besoins" rows="6" cols="45" placeholder="Besoins"></textarea></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><br/><input type="submit" value="Envoyer"></textarea></td>
-			</tr>
-			</table>	
-			<br/>
-			
-			</form>
+			<?php 
+				$prenom = $_POST['prenom'];
+				$nom = $_POST['nom'];
+				$courriel = $_POST['courriel'];
+				$institution = $_POST['institution'];
+				$departement = $_POST['departement'];
+				$resume = $_POST['resume'];
+				$presentation = $_POST['presentation'];
+				$besoins = $_POST['besoins'];
+				
+				$formcontent=
+				"Conférencier : $prenom $nom \n \n 
+				Institution : $institution \n \n
+				Département : $departement \n \n
+				Type de présentation : $presentation \n \n				
+				Résumé : $resume \n \n 
+				Besoins : $besoins \n \n";
+				
+				$recipient = "dangagnon@gmail.com";
+				$subject = "Proposition d'atelier";
+				$mailheader = "De: $courriel \r\n";
+				
+				mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+				
+				echo "Merci pour votre proposition d'atelier!";
+?> 
 			
 			</p>
 		</div>
@@ -223,3 +193,6 @@
 
 </body>
 </html>
+
+
+
