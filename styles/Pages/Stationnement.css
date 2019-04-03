@@ -10,12 +10,20 @@
     font-family: Georgia;
 }
 
+#page-stationnement h3 {
+	text-align: left;
+    font-weight: bolder;
+    font-size: 1.4em;
+    font-family: Georgia;
+}
+
 #imgStationnement1 {
 	object-fit: cover;
 	object-position: 50% 0;
 	width: 200px;
 	height: 200px;
     border-radius: 100% 100% 100% 100%;
+	margin: 5px 5px 5px 5px;
 }
 
 #imgStationnement2 {
@@ -26,8 +34,9 @@
 }
 
 .txtStationnement{
-	padding: 15px 20px 15px 20px;
+	padding: 0px 20px 15px 20px;
 	font-family: 'Times New Roman';
 	font-style: normal;
 	font-size: 1.2em;
 }
+

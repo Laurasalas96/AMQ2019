@@ -36,8 +36,6 @@
                             <li><a href="nous_contacter.html">NOUS CONTACTER</a></li>
                             <li><a href="Comite.html">COMITÉ ORGANISATEUR</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="Apropos_AMQ.html">À PROPOS DE L'AMQ </a></li>
-                            <li role="separator" class="divider"></li>
                             <li><a href="commanditaires.html">COMMANDITAIRES</a></li>
                         </ul>
                     </li>
@@ -47,14 +45,13 @@
                             <li><a href="conference_pleniere.html">CONFÉRENCE PLÉNIÈRE</a></li>
                             <li><a href="Artiste.html">ARTISTE INVITÉ</a></li>
                             <li><a href="horaire.html">HORAIRE GÉNÉRAL</a></li>
-                            <li><a href="proposerUnAtelier.html">PROPOSER UN ATELIER</a></li>
+                            <li><a href="proposerUnAtelier.php">PROPOSER UN ATELIER</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle white" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SE RENDRE AU CONGRÈS<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="itineraire.html">ITINÉRAIRE</a></li>
-							<li><a href="covoiturage.html">COVOITURAGE</a></li>
+							<li><a href="transport.html">TRANSPORT</a></li>
 							<li><a href="stationnement.html">STATIONNEMENT</a></li>
 							<li><a href="hebergement.html">HÉBERGEMENT</a></li>
                             <li role="separator" class="divider"></li>
@@ -76,7 +73,6 @@
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
-
 	 <?php
 	//  variables
 	

@@ -1,16 +1,16 @@
-#page-itineraire{
+#page-transport{
     margin-top: 70px;
 	height: 100em;
 }
 
-#page-itineraire h1 {
+#page-transport h1 {
     text-align: center;
     font-weight: bolder;
     font-size: 2.4em;
     font-family: Georgia;
 }
 
-#page-itineraire h3 {
+#page-transport h3 {
 	padding: 15px 20px 15px 20px;
 	text-align: left;
 	font-weight: bolder;
@@ -18,7 +18,7 @@
 	font-family: Georgia;
 }
 
-#imgItineraire {
+#imgTransport {
     object-fit: cover;
     object-position: 50% 0;
     width: 200px;
@@ -26,11 +26,11 @@
     border-radius: 100% 100% 100% 100%;
 }
 
-.txtItineraire{
+.txtTransport{
     padding: 5px 20px 55px 20px;
     font-family: 'Times New Roman';
     font-style: normal;
-   font-size: 1.1em;
+   font-size: 1.2em;
    margin-bottom: 20px;
 }
 
