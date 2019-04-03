@@ -77,46 +77,231 @@
         </div><!-- /.container-fluid -->
     </nav>
 
+	 <?php
+	//  variables
+	
+	$prenom = "";
+	$erreurPrenom = "";
+	$nom = "";
+	$erreurNom = "";
+	$courriel = "";
+	$erreurCourriel = "";
+	$Institution = "";
+	$erreurInstitution = "";
+	$departement = "";
+	$erreurDepartement = "";
+	$presentation = "";
+	$erreurPrensentation = "";
+	$titre = "";
+	$erreurTitre = "";
+	$resume = "";
+	$besoins = "";
+	
+	$formulaireBienRempli = true;
+	
+	function test_input($data) {
+	  $data = trim($data);
+	  $data = stripslashes($data);
+	  $data = htmlspecialchars($data);
+	  return $data;
+	}
+	
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+		if (empty($_POST["prenom"])) 
+			{$erreurPrenom = "Un prénom est nécessaire"; $formulaireBienRempli = false;}
+		else 
+			{$prenom = test_input($_POST["prenom"]);}
 
-   <div class="page-standard" id="page-proposer">
-        <h1>Proposer un atelier</h1>
+		if (empty($_POST["nom"])) 
+			{$erreurNom = "Un nom est nécessaire"; $formulaireBienRempli = false;} 
+		else 
+			{$nom = test_input($_POST["nom"]);}
+		 
+		if (empty($_POST["courriel"])) 
+			{$erreurCourriel = "Un courriel est nécessaire";} 
+		elseif(!filter_var($_POST["courriel"], FILTER_VALIDATE_EMAIL)) 
+			{$erreurCourriel = "format de courriel invalide"; $formulaireBienRempli = false;}
+		else 
+			{$courriel = test_input($_POST["courriel"]);}
+
+		if (empty($_POST["presentation"])) 
+			{$erreurPresentation = "Veuillez choisir un type de présentation"; $formulaireBienRempli = false;} 
+		else 
+			{$presentation = test_input($_POST["presentation"]);}
+	 
+		if (empty($_POST["titre"])) 
+			{$erreurTitre = "Veuillez donner le titre de la présentation"; $formulaireBienRempli = false;} 
+		else 
+			{$titre = test_input($_POST["titre"]);}
+	 		  
+	}
+	 
+	if (($_SERVER["REQUEST_METHOD"] == "POST")&& $formulaireBienRempli ) { 
+		/*  Tout est ok on envoie le courriel */
+		
+		$typePresentation = ""; // variable pour décrire le type de présentation de façon détaillée
+		
+		if($presentation == 'court') {$typePresentation = "Atelier court (15 minutes)";}
+		elseif($presentation == 'moyen') {$typePresentation = "Atelier (30 minutes)";}
+		else{$typePresentation = "Présentation (1 heure)";}
+		
+		
+		// Courriel envoyé à amq2019
+		$contenuDuFormulaire =
+		"Conférencier : $prenom $nom \n \n 
+		Institution : $institution \n \n
+		Département : $departement \n \n
+		Courriel : $courriel \n \n
+		Titre : $titre \n \n
+		Type de présentation : $presentation \n \n				
+		Résumé : $resume \n \n 
+		Besoins : $besoins \n \n";
+				
+		$destinataire = "dangagnon@gmail.com";
+		$sujet = "Proposition d'atelier";
+		$entete = "From: $courriel \r\n";
+				
+		mail($destinataire, $sujet, $contenuDuFormulaire, $entete) or die("Error!");
+				
+				
+		// Courriel envoyé au conférencier
+		$contenuDuFormulaire =
+		"Bonjour $prenom $nom ,\n
+		
+		Ceci est un message de confirmation de la part du comité organisateur du congrès de l'AMQ 2019. Nous avons bien reçu votre proposition d'atelier.
+		\n Veuillez vérifier que toutes les informations suivantes sont exactes.
+		\n \n
+		Nom : $prenom $nom \n
+		Institution : $institution \n
+		Département : $departement \n
+		Titre : $titre \n
+		Type de présentation : $typePresentation \n \n
+		Merci et à bientôt!\n \n";
+				
+		$destinataire = $courriel;
+		$sujet = "Proposition d'atelier";
+		$entete = "From: info@amq2019.com"  . "\r\n" .
+					"Reply-To: info@amq2019.com" . "\r\n" .
+					"X-Mailer: PHP/" . phpversion();
+		
+		mail($destinataire, $sujet, $contenuDuFormulaire, $entete) or die("Error!");	
+				
+	
+		?>
+		
+		<div class="page-standard" id="page-proposer">
 		<div class="col-md-12 col-s-12" >
-            <p id="txtProposer">
+            <h3>Proposition bien reçue!</h3>
+			
+			<p id="txtProposer">
+			
 			<br/>
 			<br/>
-			<?php 
-				$prenom = $_POST['prenom'];
-				$nom = $_POST['nom'];
-				$courriel = $_POST['courriel'];
-				$institution = $_POST['institution'];
-				$departement = $_POST['departement'];
-				$resume = $_POST['resume'];
-				$presentation = $_POST['presentation'];
-				$besoins = $_POST['besoins'];
-				
-				$formcontent=
-				"Conférencier : $prenom $nom \n \n 
-				Institution : $institution \n \n
-				Département : $departement \n \n
-				Courriel : $courriel \n \n
-				Type de présentation : $presentation \n \n				
-				Résumé : $resume \n \n 
-				Besoins : $besoins \n \n";
-				
-				$recipient = "dangagnon@gmail.com";
-				$subject = "Proposition d'atelier";
-				$mailheader = "De: $courriel \r\n";
-				
-				mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-				
-				echo "Merci pour votre proposition d'atelier!";
-?> 
+			Merci pour votre proposition d'atelier.<br/>
+			Vous recevrez un courriel d'ici quelques minutes pour confirmer votre proposition. 
+			
+			<br/>
 			
 			</p>
 		</div>
 
 		</div>
+		
+		 
+		<?php
+	}
+	else { ?>   <!-- On va au formulaire -->
+		
+	<div class="page-standard" id="page-proposer">
+        <h1>Proposer un atelier</h1>
+		<div class="col-md-12 col-s-12" >
+            <p id="txtProposer">
+			<br/>
+			<br/>
+			Vous pouvez proposer un atelier jusqu'au <font color=blue>15 août</font> en complétant le formulaire suivant.
+			
+			<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+			
+			<table>
+			<tr>
+				<th width="150px"></th>
+				<th width="500px"></th>
+			</tr>
+			<tr>
+				<td><label for="prenom">Prénom : </label></td>
+				<td><input type="text" id="prenom" name="prenom" placeholder="Prénom" value="<?php echo $prenom;?>" >
+					<span class="error"><?php echo $erreurPrenom;?></span>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="nom">Nom : </label></td>
+				<td><input type="text" id="nom" name="nom" placeholder="Nom" value="<?php echo $nom;?>">
+					<span class="error"> <?php echo $erreurNom;?></span>
+				</td>
+				
+			</tr>
+			<tr>
+				<td><label for="courriel">Courriel : </label></td>
+				<td><input type="text" id="courriel" name="courriel" placeholder="Courriel" value="<?php echo $courriel;?>">
+					<span class="error"> <?php echo $erreurCourriel;?></span>
+				</td>
+			</tr>
+			
+			<tr>
+				<td><label for="institution">Institution : </label></td>
+				<td><input type="text" id="institution" name="institution" placeholder="Institution" value="<?php echo $institution;?>">
+				</td>
+			</tr>
+			<tr>
+				<td><label for="departement">Département : </label></td>
+				<td><input type="text" id="departement" name="departement" placeholder="Département" value="<?php echo $departement;?>">
+				</td>
+			</tr>
+			
+			<tr>
+				<td><label for="presentation">Type de présentation : </label></td>
+				<td><select id="presentation" name="presentation" value="<?php echo $presentation;?>">
+					<option value=""></option>
+					<option value="long">Présentation (1h)</option>
+					<option value="moyen">Atelier (30 min.)</option>
+					<option value="court">Atelier court (15 min.)</option>
+					</select>
+					<span class="error"> <?php echo $erreurPresentation;?></span>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="titre">Titre : </label></td>
+				<td><input type="text" id="titre" name="titre" placeholder="Titre" value="<?php echo $titre;?>">
+				<span class="error"> <?php echo $erreurTitre;?></span></td>
+			</tr>
+			<tr>
+				<td><label for="resume">Résumé: </label></td>
+				<td><textarea name="resume" rows="6" cols="45" placeholder="Résumé" value="<?php echo $resume;?>"></textarea></td>
+			</tr>
+			<tr>
+				<td><label for="besoins">Besoins particuliers: (autre que projecteur ou tableau) </label></td>
+				<td><textarea name="besoins" rows="6" cols="45" placeholder="Besoins" value="<?php echo $besoins;?>"></textarea></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><br/><input type="submit" value="Envoyer"></textarea></td>
+			</tr>
+			</table>	
+			<br/>
+			
+			</form>
+			
+			</p>
+		</div>
 
+	</div>	
+	
+	
+	<?php	
+	}
+	 
+	
+	?>
 
 
 
@@ -194,6 +379,3 @@
 
 </body>
 </html>
-
-
-
