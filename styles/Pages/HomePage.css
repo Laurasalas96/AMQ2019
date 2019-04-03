@@ -36,17 +36,6 @@ header {
         padding: 12px 10px 6px 10px;
     }
 
-    header .dropdown-menu {
-        top: 74px;
-        background: #ffcc33;
-        border-width: 0;
-    }
-
-h1 {
-    font-size: 50px;
-}
-
-
 /* customize nav style */
 
 
@@ -58,70 +47,13 @@ h1 {
     border-width: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
     header {
-        height: 95px;
+        height: 130px;
     }
 }
 
 
-
-section {
-    color: #ffffff;
-    min-height: 400px;
-    height: auto !important;
-    height: 100%;
-    padding-top: 100px;
-}
-
-.bg-1 {
-    background: url('http://www.bootply.com/assets/example/bg_4.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.bg-2 {
-    background: url('http://www.bootply.com/assets/example/bg_5.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.bg-3 {
-    background: url('http://www.bootply.com/assets/example/bg_6.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.bg-4 {
-    padding-top: 30px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(20,20,20,0.2)),to(rgba(255,255,255,0)), color-stop(1,#000));
-}
-
-.p0 {
-    height: 45em;
-    width: 100%;
-    background-color: #363636;
-}
-#myVideo {
-} /**/
-    /*position: absolute;*/
-    /*z-index: -1;
-    top: 0;
-    width: 80%;
-    height: 100%;
-    margin: 0% 0% 0% -10%;
-    
-}
-#barre-droite h1{
-    float: right;
-
-}*/
 
 #titre-p1 h1{
     text-align:center;
@@ -142,9 +74,11 @@ texte-p1{
 #poster {
     float: right;
     margin: 0px 0px 0px 30px;
+    width: 350px; 
+    height: 467px;
 }
 
-#invites {
+/*#invites {
     position: relative;
     text-align: center;
     
@@ -180,21 +114,5 @@ texte-p1{
 .centered:hover{
     opacity: 100;
     z-index: 3;
-}
-
-.bottom-label{
-  padding-top: 1em;
-  font-family: 'Times New Roman';
-  font-style: italic;
-  font-size: 1.2em;
-}
-.top-label {
-    padding-bottom: 1em;
-    font-family: Georgia;
-    font-weight: bolder;
-    font-size: 1.6em;
-}
-#p2 {
-    padding-top: 10em;
-}
+}*/
 

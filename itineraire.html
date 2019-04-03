@@ -1,22 +1,21 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Transport | Congrès AMQ 2019</title>
+    <title>Accueil | Congrès AMQ 2019</title>
     <!--favicon-->
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!--CSS general du site (peut etre enlever ceci)-->
-    <!--<link rel="stylesheet" href="styles/main.css" type="text/css" />-->
-    <!--CSS General du site-->
-    <link rel="stylesheet" href="styles/main.css" />
-    <!--CSS de la page actuelle-->
+    <!--CSS importants-->
     <link rel="stylesheet" href="styles/Pages/Itineraire.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <!--Couleur du theme aux versions mobiles-->
+    <meta name="theme-color" content="#EB5642" />
 
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
+
 <body>
+
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -27,7 +26,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" id="navbar-space" href="index.html"><img src="assets/mini-logo.png" width="70" height="30" alt=""> </a>
+                <a href="index.html" id="navbar-space" class="navbar-left"><img src="assets/mini-logo.png"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
 
@@ -39,194 +38,190 @@
                         <ul class="dropdown-menu">
                             <li><a href="nous_contacter.html">NOUS CONTACTER</a></li>
                             <li><a href="Comite.html">COMITÉ ORGANISATEUR</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="Apropos_AMQ.html">À PROPOS DE L'AMQ </a></li>
+                            <!--<li role="separator" class="divider"></li>
+                            <li><a href="Apropos_AMQ.html">À PROPOS DE L'AMQ </a></li>-->
                             <li role="separator" class="divider"></li>
                             <li><a href="commanditaires.html">COMMANDITAIRES</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle white" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PROGRAMME<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu white">
                             <li><a href="conference_pleniere.html">CONFÉRENCE PLÉNIÈRE</a></li>
-                            <li><a href="Artiste.html">ARTISTE INVITÉ</a></li>
+                            <li white><a href="Artiste.html">ARTISTE INVITÉ</a></li>
                             <li><a href="horaire.html">HORAIRE GÉNÉRAL</a></li>
-                            <li><a href="proposerUnAtelier.html">PROPOSER UN ATELIER</a></li>
+                            <li><a href="proposerUnAtelier.php">PROPOSER UN ATELIER</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle white" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SE RENDRE AU CONGRÈS<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="itineraire.html">ITINÉRAIRE</a></li>
-							<li><a href="covoiturage.html">COVOITURAGE</a></li>
-							<li><a href="stationnement.html">STATIONNEMENT</a></li>
-							<li><a href="hebergement.html">HÉBERGEMENT</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="proche_cegep.html">LIEUX PROCHES DU CÉGEP</a></li>
+                            <li><a href="transport.html">TRANSPORT</a></li>
+                            <!--<li><a href="itineraire.html">ITINÉRAIRE</a></li>
+                            <li><a href="covoiturage.html">COVOITURAGE</a></li>-->
+                            <li><a href="stationnement.html">STATIONNEMENT</a></li>
+                            <!--<li><a href="hebergement.html">HÉBERGEMENT</a></li>-->
+                            <!--<li role="separator" class="divider"></li>
+                            <li><a href="proche_cegep.html">LIEUX PROCHES DU CÉGEP</a></li>-->
                         </ul>
                     </li>
-				    
-					<li class="dropdown">
-					<a href="#" class="dropdown-toggle white" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ÉCORESPONSABILITÉ<span class="caret"></span></a>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle white" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ÉCORESPONSABILITÉ<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="caractere.html">CARACTÈRE ÉCORESPONSABLE ET OBJECTIFS</a></li>
                             <li><a href="commentSePreparer.html">COMMENT SE PRÉPARER</a></li>
                         </ul>
-					</li>
-					
-					<li><a href="inscription.html" class="white">INSCRIPTION</a></li>
-					
+                    </li>
+
+                    <li><a href="inscription.html" class="white">INSCRIPTION</a></li>
+
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
 
-
-    <div class="page-itineraire" id="Itineraire-p1">
-
+    <div class="page-standard row" id="Itineraire-p1">
         <h1>Comment se rendre</h1>
-		<h3 id="ancrageVelo">En vélo</h3>
-        <div class="col-md-12 col-s-12" >
-            <p class="txtItineraire">
-			<b>Réseaux de pistes cyclables:</b><br/>
-			Dans les plans suivants, vous trouverez les pistes cyclables de Montréal ainsi que les différentes bornes BIXI. 
-			<br/>
-			Carte des pistes cyclables de Montréal : 
-			<br/><font color=blue>insérer carte_centre-ville.pdf</font><br/><br/>
-			Carte des pistes cyclables du Grand Montréal (si vous venez de plus loin!):
-			<br/> <font color=blue>insérer cartemontrealmetropolitain.pdf</font>
-			<br/><br/>
-
-			<b>Venir en BIXI:</b>
-			<br/>
-			Bornes à proximité du cégep : <br/>
-			- Sanguinet/Ontario (station 6021), <font color=blue>XX</font> ancrages disponibles.<br/>
-			- de l’Hôtel-de-ville/Sherbrooke (station 6021), <font color=blue>XX</font> ancrages disponibles.<br/>
-			- Sanguinet/de Maisonneuve (station 6013), <font color=blue>XX</font> ancrages disponibles.<br/>
-			<br/><br/>
-			Pour connaître l’emplacement des autres stations BIXI à Montréal, cliquer <a href="https://secure.bixi.com/map/">ici</a>!<br/>
-	  	    Pour savoir en temps réel le nombre de BIXI disponibles à chaque station, téléchargez l’application <a href="https://itunes.apple.com/ca/app/bixi/id628543321?mt=8">App Store</a> ou <a href="https://play.google.com/store/apps/details?id=com.eightd.biximobile&amp;hl=fr">Google Play</a>.
-
-			</p>
-		</div>
-
-		<h3>En transport en commun</h3>
+        <h3 id="ancrageVelo">En vélo</h3>
         <div class="col-md-12 col-s-12">
             <p class="txtItineraire">
-			<img align="right" id="imgPlanStationsMetro" src="assets/planStationsMetro.gif" />
-			Le cégep est situé entre trois stations de métro : Berri-Uqam, Saint-Laurent et Sherbrooke. 
-			<br/>À vous de choisir votre station préférée!
-			<br/><br/>
-			Plans du réseau de transport :<br/>
-			Plan du centre-ville :  <font color=blue>plan_reseau_centreville.pdf</font><br/>
-			Plan du réseau de Montréal : <font color=blue>plan_reseau.pdf</font><br/>
-			Plan du réseau de nuit (si vous veillez tard) : <font color=blue>plan_reseau_nuit.pdf et plan_centreville_nuit.pdf</font><br/>
-			Si vous venez de plus loin, pourquoi pas le train? : <font color=blue>reseautrain.pdf</font><br/>
-			<br/>
-			<img align="left" id="imgSTM" src="assets/stmMerci.jpg" />
-			<br/>
-			</p>
-		</div>
+                <b>Réseaux de pistes cyclables:</b><br />
+                Dans les plans suivants, vous trouverez les pistes cyclables de Montréal ainsi que les différentes bornes BIXI.
+                <br />
+                Carte des pistes cyclables de Montréal :
+                <br /><font color=blue>insérer carte_centre-ville.pdf</font><br /><br />
+                Carte des pistes cyclables du Grand Montréal (si vous venez de plus loin!):
+                <br /> <font color=blue>insérer cartemontrealmetropolitain.pdf</font>
+                <br /><br />
+                <b>Venir en BIXI:</b>
+                <br />
+                Bornes à proximité du cégep : <br />
+                - Sanguinet/Ontario (station 6021), <font color=blue>XX</font> ancrages disponibles.<br />
+                - de l’Hôtel-de-ville/Sherbrooke (station 6021), <font color=blue>XX</font> ancrages disponibles.<br />
+                - Sanguinet/de Maisonneuve (station 6013), <font color=blue>XX</font> ancrages disponibles.<br />
+                <br /><br />
+                Pour connaître l’emplacement des autres stations BIXI à Montréal, cliquer <a href="https://secure.bixi.com/map/">ici</a>!<br />
+                Pour savoir en temps réel le nombre de BIXI disponibles à chaque station, téléchargez l’application <a href="https://itunes.apple.com/ca/app/bixi/id628543321?mt=8">App Store</a> ou <a href="https://play.google.com/store/apps/details?id=com.eightd.biximobile&amp;hl=fr">Google Play</a>.
 
-		
-		<br/>
-		<h3>En voiture</h3>
-		<div class="col-md-4 col-s-12" id="nous-joindre">
-			<p class="txtItineraire">
-				<iframe class="rond" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.7756214546134!2d-73.56855844883194!3d45.51459527899897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a4b508adcab%3A0x9439f187f763ea27!2sC%C3%A9gep+du+Vieux+Montr%C3%A9al!5e0!3m2!1sen!2sca!4v1548698012269" width="200" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</p>
+            </p>
         </div>
-		
-		
-		
-		
-		
-		
-		
-		</div>
-		
-		
-		
-		
-		
-		
-		
+        <h3>En transport en commun</h3>
+        <div class="col-md-12 col-s-12">
+            <p class="txtItineraire">
+                <img align="right" id="imgPlanStationsMetro" src="assets/planStationsMetro.gif" />
+                Le cégep est situé entre trois stations de métro : Berri-Uqam, Saint-Laurent et Sherbrooke.
+                <br />À vous de choisir votre station préférée!
+                <br /><br />
+                Plans du réseau de transport :<br />
+                Plan du centre-ville :  <font color=blue>plan_reseau_centreville.pdf</font><br />
+                Plan du réseau de Montréal : <font color=blue>plan_reseau.pdf</font><br />
+                Plan du réseau de nuit (si vous veillez tard) : <font color=blue>plan_reseau_nuit.pdf et plan_centreville_nuit.pdf</font><br />
+                Si vous venez de plus loin, pourquoi pas le train? : <font color=blue>reseautrain.pdf</font><br />
+                <br />
+                <img align="left" id="imgSTM" src="assets/stmMerci.jpg" />
+                <br />
+            </p>
+        </div>
+
+        <br />
+        <h3>En voiture</h3>
+        <div class="col-md-4 col-s-12" id="nous-joindre">
+
+            <p class="txtItineraire">
+                <iframe class="rond" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.7756214546134!2d-73.56855844883194!3d45.51459527899897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a4b508adcab%3A0x9439f187f763ea27!2sC%C3%A9gep+du+Vieux+Montr%C3%A9al!5e0!3m2!1sen!2sca!4v1548698012269" width="1000" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </p>
+        </div>
+
+
+
+
+
+
+
     </div>
 
 
 
+    <footer class="page-footer">
+        <div class="footer">
+            <!-- Footer -->
+            <footer class="page-footer font-small blue pt-4">
 
+                <!-- Footer Links -->
+                <div class="container-fluid text-center text-md-left">
 
+                    <!-- Grid row -->
+                    <div class="row">
 
-
-
-
-    <div class="footer">
-        <!-- Footer -->
-        <footer class="page-footer font-small blue pt-4">
-            <!-- Footer Links -->
-            <div class="container-fluid text-center text-md-left">
-                <!-- Grid row -->
-                <div class="row">
-                    <!-- Grid column -->
-                    <div class="col-md-6 mt-md-0 mt-3">
-                        <!-- Content -->
-                        <h1 class="footer-congress" id="ftc-top">CONGRÈS</h1>
-                        <h1 class="footer-congress">AMQ 2019</h1>
-                    </div>
-                    <!-- Grid column -->
-                    <div id="footer-list">
                         <!-- Grid column -->
-                        <div class="col-md-3 mb-md-0 mb-3">
-                            <!-- Links -->
-                            <h5 class="text-uppercase">Links</h5>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a href="#!">Link 1</a>
-                                </li>
-                                <li>
-                                    <a href="#!">Link 2</a>
-                                </li>
-                                <li>
-                                    <a href="#!">Link 3</a>
-                                </li>
-                                <li>
-                                    <a href="#!">Link 4</a>
-                                </li>
-                            </ul>
+                        <div class="col-md-6 mt-md-0 mt-3">
+
+                            <!-- Content -->
+                            <h1 class="footer-congress" id="ftc-top">CONGRÈS</h1>
+                            <h1 class="footer-congress">AMQ 2019</h1>
+
                         </div>
                         <!-- Grid column -->
-                        <!-- Grid column -->
-                        <div class="col-md-3 mb-md-0 mb-3">
-                            <!-- Links -->
-                            <h5 class="text-uppercase">Links</h5>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a href="#!">Link 1</a>
-                                </li>
-                                <li>
-                                    <a href="#!">Link 2</a>
-                                </li>
-                                <li>
-                                    <a href="#!">Link 3</a>
-                                </li>
-                                <li>
-                                    <a href="#!">Link 4</a>
-                                </li>
-                            </ul>
+                        <div id="footer-list">
+                            <!-- Grid column -->
+                            <div class="col-md-3 mb-md-0 mb-3">
+
+                                <!-- Links -->
+                                <h5 class="text-uppercase">Liens Rapides</h5>
+
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="index.html">Accueil</a>
+                                    </li>
+                                    <li>
+                                        <a href="horaire.html">Horaire Général</a>
+                                    </li>
+                                    <li>
+                                        <a href="caractere.html"> Écoresponsabilité</a>
+                                    </li>
+                                    <li>
+                                        <a href="inscription.html">Inscription</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="col-md-3 mb-md-0 mb-3">
+
+                                <!-- Links -->
+                                <h5 class="text-uppercase">Se rendre, nous joindre</h5>
+
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="nous_contacter.html">Nous Contacter</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/AMQ2019/">Facebook</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.amq.math.ca/">Site Web AMQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="itineraire.html">Itinéraire</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- Grid column -->
                         </div>
-                        <!-- Grid column -->
                     </div>
+                    <!-- Grid row -->
+
                 </div>
-                <!-- Grid row -->
-            </div>
-        </footer>
-        <!-- Footer -->
 
-    </div>
+            </footer>
+            <!-- Footer -->
 
 
-
+        </div>
+    </footer>
 
 
 
@@ -234,5 +229,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="scripts/script1.js"></script>
+
+
 </body>
+</html>

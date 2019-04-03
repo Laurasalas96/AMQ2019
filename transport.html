@@ -6,7 +6,7 @@
     <!--favicon-->
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <!--CSS importants-->
-    <link rel="stylesheet" href="styles/Pages/Commanditaires.css" />
+    <link rel="stylesheet" href="styles/Pages/Transport.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <!--Couleur du theme aux versions mobiles-->
@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -82,40 +81,59 @@
     </nav>
 
 
-    <div class="page-standard row" id="page-commanditaires">
-        <h1 id="commanditaires">Nos commanditaires</h1>
+    <div class="page-standard row" id="page-transport">
+        <h1>Comment se rendre</h1>
+        <h3 id="ancrageVelo">En vélo</h3>
         <div class="col-md-12 col-s-12">
-            <p id="txtCommanditaires">
+            <p class="txtTransport">
+                <b>Réseaux de pistes cyclables:</b><br />
+                Dans les plans suivants, vous trouverez les pistes cyclables de Montréal ainsi que les différentes bornes BIXI.
+                <br />
+                Carte des pistes cyclables de Montréal :
+                <br /><font color=blue>insérer carte_centre-ville.pdf</font><br /><br />
+                Carte des pistes cyclables du Grand Montréal (si vous venez de plus loin!):
+                <br /> <font color=blue>insérer cartemontrealmetropolitain.pdf</font>
+                <br /><br />
+                <b>Venir en BIXI:</b>
+                <br />
+                Bornes à proximité du cégep : <br />
+                - Sanguinet/Ontario (station 6021), <font color=blue>XX</font> ancrages disponibles.<br />
+                - de l’Hôtel-de-ville/Sherbrooke (station 6021), <font color=blue>XX</font> ancrages disponibles.<br />
+                - Sanguinet/de Maisonneuve (station 6013), <font color=blue>XX</font> ancrages disponibles.<br />
+                <br /><br />
+                Pour connaître l’emplacement des autres stations BIXI à Montréal, cliquer <a href="https://secure.bixi.com/map/">ici</a>!<br />
+                Pour savoir en temps réel le nombre de BIXI disponibles à chaque station, téléchargez l’application <a href="https://itunes.apple.com/ca/app/bixi/id628543321?mt=8">App Store</a> ou <a href="https://play.google.com/store/apps/details?id=com.eightd.biximobile&amp;hl=fr">Google Play</a>.
 
-                <table>
-                    <tr>
-                        <th style="width:33%;"></th>
-                        <th style="width:33%;"></th>
-                        <th style="width:34%;"></th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="http://sciences.uqam.ca/fr/"><img class="img" id="imgSciencesUqam" src="assets/commanditaires/UQAM_faculte_sciences.jpg" /></a>
-                        </td>
-                        <td></td>
-                        <td>
-                            <a href="https://www.acfas.ca/"><img class="img" id="imgACFAS" src="assets/commanditaires/acfas.png" /></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="https://fcvm.ca"><img class="img" id="imgFondation" src="assets/commanditaires/fondation.png" /></a>
-                        </td>
-                        <td>
-                            <a href="http://ism.uqam.ca/"><img class="img" id="imgISM" src="assets/commanditaires/ISM.png" /></a>
-                        </td>
-                    </tr>
-
-
-                </table>
             </p>
         </div>
+        <h3>En transport en commun</h3>
+        <div class="col-md-12 col-s-12">
+            <p class="txtTransport">
+                <img align="right" id="imgPlanStationsMetro" src="assets/planStationsMetro.gif" />
+                Le cégep est situé entre trois stations de métro : Berri-Uqam, Saint-Laurent et Sherbrooke.
+                <br />À vous de choisir votre station préférée!
+                <br /><br />
+                Plans du réseau de transport :<br />
+                Plan du centre-ville :  <font color=blue>plan_reseau_centreville.pdf</font><br />
+                Plan du réseau de Montréal : <font color=blue>plan_reseau.pdf</font><br />
+                Plan du réseau de nuit (si vous veillez tard) : <font color=blue>plan_reseau_nuit.pdf et plan_centreville_nuit.pdf</font><br />
+                Si vous venez de plus loin, pourquoi pas le train? : <font color=blue>reseautrain.pdf</font><br />
+                <br />
+                <img align="left" id="imgSTM" src="assets/stmMerci.jpg" />
+                <br />
+            </p>
+        </div>
+
+        <br />
+        <h3>En voiture</h3>
+        <div class="col-md-4 col-s-12" id="nous-joindre">
+            <p class="txtTransport">
+                <iframe class="rond" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.7756214546134!2d-73.56855844883194!3d45.51459527899897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a4b508adcab%3A0x9439f187f763ea27!2sC%C3%A9gep+du+Vieux+Montr%C3%A9al!5e0!3m2!1sen!2sca!4v1548698012269" width="900" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </p>
+        </div>
+
     </div>
+
 
     <footer class="page-footer">
         <div class="footer">

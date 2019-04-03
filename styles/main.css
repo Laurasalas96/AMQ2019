@@ -2,6 +2,24 @@
 
 
 /*********************************/
+#avenir {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Ceci change la couleur de selection*/
+::selection {
+    background: #fbe182; /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+    background: #fbe182; /* Gecko Browsers */
+}
+
+.html {
+    height: 100%;
+}
 
 body p {
     font-family: 'Times New Roman';
@@ -52,14 +70,15 @@ li {
     font-weight: bold;
 }
 #navbar-space{
-    padding-top: 4%;
+    padding-top: 2%;
+    
 }
 
 .page-standard {
     width: 100%;
-    height: 45em;
     margin-top: 10%;
     padding: 0 10% 0 10%;
+    margin-bottom: 10%;
 }
 
 .footer {
@@ -68,7 +87,9 @@ li {
     color: white;
     font-family: Calibri;
     font-weight: bold;
-
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-congress{
@@ -102,3 +123,20 @@ body {
 #eco_friendly:hover {
     color: #006231 !important;
 }
+
+.page-standard h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3em;
+    font-family: Georgia;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+

@@ -1,14 +1,13 @@
-#Comite-p1{
+#page-comite {
     margin-top: 70px;
 }
 
-
-#Comite-p1 h1 {
-    text-align: center;
-    font-weight: bolder;
-    font-size: 3em;
-    font-family: Georgia;
-}
+    #page-comite h1 {
+        text-align: center;
+        font-weight: bolder;
+        font-size: 2.4em;
+        font-family: Georgia;
+    }
 
 #nomInvite {
     text-align: center;
@@ -23,40 +22,20 @@
     width: 200px;
     height: 200px;
     border-radius: 100% 100% 100% 100%;
+    margin: 5px 5px 5px 5px;
 }
 
-#txtComite{
-    padding: 15px 20px 15px 20px;
-    font-family: 'Times New Roman';
-    font-style: normal;
-   font-size: 1.1em;
-}
-.precedent-suivant{
-    text-align: center;
-    font-weight: 400;
-    font-size: 1.7em;
-    color: #808080;
-    font-family: 'Times New Roman';
-    font-style:italic; 
-    margin: 15px 0px 15px 0px;
-}
-
-.precedent-suivant:hover{
-    opacity: 0.7;
-}
-
-#ordreAlph {
+#imgGraphe {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    width: 1200px;
+    width: 200px;
+    height: 220px;
 }
 
-#AlphTitre {
-    text-align: center;
-    font-weight: bolder;
-    font-size: 1.4em;
-    font-family: Georgia;
-    margin: 25px 5px 15px 5px;
+#txtComite {
+    padding: 15px 20px 15px 20px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-size: 1.2em;
 }

@@ -1,3 +1,30 @@
+#page-commanditaires {
+    margin-top: 70px;
+    height: 55em;
+}
+
+#txtCommanditaires {
+    padding: 5px 20px 55px 20px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#page-commanditaires h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2.4em;
+    font-family: Georgia;
+}
+
+#page-commanditaires h3 {
+    text-align: left;
+    font-weight: bolder;
+    font-size: 1.4em;
+    font-family: Georgia;
+}
+
 #commanditaires {
     text-align: center;
     font-weight: bolder;
@@ -6,14 +33,41 @@
     margin-top: 35px;
 }
 
-.comman_img {
+table {
+    text-align: left;
+}
+
+td {
+    vertical-align: top;
+    padding: 20px 25px 15px 25px;
+}
+
+.img {
     display: inline-block;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 10px 10px 10px 10px;
-    object-fit: cover;
-    width: 500px;
-    height: 200px;
-    border-radius: 10% 10% 10% 10%;
+    margin: 5px 5px 5px 5px;
+}
+
+#imgSciencesUqam {
+    width: 310px;
+    height: auto;
+}
+
+#imgISQ {
+    width: 250px;
+    height: auto;
+}
+
+#imgACFAS {
+    width: 260px;
+    height: auto;
+}
+
+#imgISM {
+    width: 220px;
+    height: auto;
+}
+
+#imgFondation {
+    width: 220px;
+    height: auto;
 }
